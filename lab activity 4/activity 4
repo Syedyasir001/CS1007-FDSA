@@ -8,7 +8,6 @@ class LinkedList:
         self.head = None  
 
     def append_node(self, data): 
-        """Appends a node at the end of the list."""
         new_node = Node(data) 
         if not self.head:  
             self.head = new_node
@@ -19,7 +18,6 @@ class LinkedList:
         last.next = new_node  
 
     def search_node(self, data):
-        """Search for a node with the given value."""
         current = self.head
         while current:
             if current.data == data:  
@@ -28,7 +26,6 @@ class LinkedList:
         return False  
 
     def display_list(self): 
-        """Displays all nodes in the linked list."""
         current = self.head
         if not current:
             print("The list is empty.")
